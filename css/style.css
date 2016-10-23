@@ -1,0 +1,56 @@
+.material-icons {
+  display: inline;
+}
+
+#index-banner {
+  /*background-image: url("../img/hero.jpg");*/
+  /*background: black;*/
+}
+.deepPink {
+      background-color: DeepPink;
+}
+.deepPink-text {
+  color: DeepPink;
+}
+.btn, .btn-large {
+  background-color: DeepPink;
+}
+.navbar-fixed  {
+  background-color: RoyalBlue;
+  position: fixed;
+
+}
+.royal-blue, footer.page-footer {
+  background-color: RoyalBlue;
+}
+h1 {
+  color: white;
+  font-weight: bold;
+}
+i {
+  padding-right: 10px;
+  vertical-align: top;
+  /*text-align: center;*/
+}
+.parallax-container {
+  height: 325px;
+}
+.footer-nav {
+  text-align:right;
+}
+
+.main-content {
+  padding-top: 100px;
+}
+
+.delivery-form {
+  margin-top: 20px;
+}
+
+/* The "add to order" links on the menu cards. This is what Materialize uses to target them*/
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: deepPink;
+}
+.item-title {
+  color: RoyalBlue;
+}
