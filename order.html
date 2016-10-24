@@ -17,143 +17,139 @@
 </head>
 
 <body>
-        <nav class="navy-blue lighten-1 navbar-fixed" role="navigation">
-            <div class="nav-wrapper container">
-              <a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="active right hide-on-med-and-down">
-                    <li><a href="order.html">Order Delivery</a></li>
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="order.html">Order Delivery</a></li>
-                </ul>
-            </div>
-        </nav>
-    <main class="container section main-content">
-        <!-- <div class="section main-content"> -->
+    <nav class="navy-blue lighten-1 navbar-fixed" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="active right hide-on-med-and-down">
+                <li><a href="order.html">Order Delivery</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="order.html">Order Delivery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container section main-content row">
+        <section class="col s12 m6 l6">
+            <h5 class="item-title">Menu</h5>
             <div class="row">
-                <div class="col s12 m6 l6">
-                    <h5 class="item-title">Menu</h5>
-                    <div class="row">
-                        <div class="col s12 m6">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/burger.jpg">
-                                </div>
-                                <div class="card-content">
-                                    <p>Royale with Cheese</p>
-                                    <p>$8.99</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#" onclick="addItem('Royale with Cheese',8.99)">ADD TO ORDER</a>
-                                </div>
-                            </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/burger.jpg">
                         </div>
-                        <div class="col s12 m6">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/pizza.jpg">
-                                </div>
-                                <div class="card-content">
-                                    <p>Arugala Pie</p>
-                                    <p>$11.99</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#" onclick="addItem('Arugala Pie',11.99)">ADD TO ORDER</a>
-                                </div>
-                            </div>
+                        <div class="card-content">
+                            <p>Royale with Cheese</p>
+                            <p>$8.99</p>
                         </div>
-                        <div class="col s12 m6">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/ribs.jpg">
-                                </div>
-                                <div class="card-content">
-                                    <p>Smoked Swine</p>
-                                    <p>$14.99</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#" onclick="addItem('Smoked Swine',14.99)">ADD TO ORDER</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/ice_cream.jpg">
-                                </div>
-                                <div class="card-content">
-                                    <p>Ice Cream</p>
-                                    <p>$7.99</p>
-                                </div>
-                                <div class="card-action">
-                                    <a onclick="addItem('Ice Cream',7.99)" href="#">ADD TO ORDER</a>
-                                </div>
-                            </div>
+                        <div class="card-action">
+                            <a href="#" onclick="addItem('Royale with Cheese',8.99)">ADD TO ORDER</a>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l6">
-                    <table id="receipt-table" class="striped">
-                        <h5 class="item-title">Checkout List</h5>
-                        <thead>
-                            <tr>
-                                <th data-field="name">Item Name</th>
-                                <th data-field="id"></th>
-                                <th data-field="price">Item Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="calculations">
-                                <td></td>
-                                <td>Subtotal</td>
-                                <td id="subtotal">$0.00</td>
-                            </tr>
-                            <tr id="tax">
-                                <td></td>
-                                <td>Tax</td>
-                                <td></td>
-                            </tr>
-                            <tr id="total">
-                                <td></td>
-                                <td>Total</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="row">
-                        <form class="delivery-form">
-                            <h5 class="item-title">Delivery Information</h5>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="delivery-name" type="text" class="validate">
-                                    <label for="icon_prefix">Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">phone</i>
-                                    <input id="delivery-phone" type="tel" class="validate">
-                                    <label for="icon_telephone">Telephone</label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">business</i>
-                                    <input id="delivery-address" type="text" class="validate">
-                                    <label for="icon_prefix">Address</label>
-                                </div>
-                            </div>
-                        </form>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/pizza.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Arugala Pie</p>
+                            <p>$11.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" onclick="addItem('Arugala Pie',11.99)">ADD TO ORDER</a>
+                        </div>
                     </div>
-                    <div class="row center">
-                        <a href="#" id="place-order-btn" class="btn-large waves-effect waves-light ">PLACE AN ORDER</a>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/ribs.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Smoked Swine</p>
+                            <p>$14.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" onclick="addItem('Smoked Swine',14.99)">ADD TO ORDER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/ice_cream.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Ice Cream</p>
+                            <p>$7.99</p>
+                        </div>
+                        <div class="card-action">
+                            <a onclick="addItem('Ice Cream',7.99)" href="#">ADD TO ORDER</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
+        </section>
+        <section class="col s12 m6 l6">
+            <table id="receipt-table" class="striped">
+                <h5 class="item-title">Checkout List</h5>
+                <thead>
+                    <tr>
+                        <th data-field="name">Item Name</th>
+                        <th data-field="id"></th>
+                        <th data-field="price">Item Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="calculations">
+                        <td></td>
+                        <td>Subtotal</td>
+                        <td id="subtotal">$0.00</td>
+                    </tr>
+                    <tr id="tax">
+                        <td></td>
+                        <td>Tax</td>
+                        <td></td>
+                    </tr>
+                    <tr id="total">
+                        <td></td>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <section class="row">
+                <form class="delivery-form">
+                    <h5 class="item-title">Delivery Information</h5>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="delivery-name" type="text" class="validate">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="delivery-phone" type="tel" class="validate">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">business</i>
+                            <input id="delivery-address" type="text" class="validate">
+                            <label for="icon_prefix">Address</label>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="row center">
+                <a href="#" id="place-order-btn" class="btn-large waves-effect waves-light ">PLACE AN ORDER</a>
+            </div>
+        </section>
     </main>
-    <footer class="page-footer royal-blue">
-        <div class="container">
+    <footer class="page-footer royal-blue ">
+        <section class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Galvanize Delivers</h5>
@@ -166,12 +162,12 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
+        </section>
+        <section class="footer-copyright">
             <div class="container">
                 <small>&copy; Copyright Galvanize Delivers</small>
             </div>
-        </div>
+        </section>
     </footer>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
