@@ -9,7 +9,9 @@ var totalTD = $('#total').children().last();
 
 $(document).ready(function() {
 
-  // Item form validation
+////////////////////////////////////
+//////////// Item form validation
+////////////////////////////////////
   $("#place-order-btn").on("click", function(event) {
     if ($('tbody').children().length <= 3) {
       event.preventDefault();
@@ -24,6 +26,9 @@ $(document).ready(function() {
   })
 });
 
+////////////////////////////////////
+//////////// Item form validation
+////////////////////////////////////
 function addItem(itemName, cost) {
   event.preventDefault();
   $("<tr><td>" + itemName + "</td><td></td><td>" + "$" + cost + "</td></tr>").insertBefore("#calculations");
